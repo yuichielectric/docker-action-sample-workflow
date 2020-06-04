@@ -1,0 +1,13 @@
+name: Sample
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: yuichielectric/docker-action-sample@master
+      with:
+        secret: "Sample secret"
